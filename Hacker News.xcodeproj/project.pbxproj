@@ -98,9 +98,9 @@
 		6DF8B2F724B130C8000D64D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6DF8B2DE24B12FEE000D64D3 /* ContentView.swift */,
 				6DF8B2EE24B13038000D64D3 /* DetailView.swift */,
 				6DF8B2F024B1305D000D64D3 /* WebView.swift */,
-				6DF8B2DE24B12FEE000D64D3 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

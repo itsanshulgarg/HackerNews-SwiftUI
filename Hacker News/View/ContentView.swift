@@ -16,13 +16,16 @@ struct ContentView: View {
         NavigationView {
             List(networkManager.posts) { post in
                 NavigationLink(destination: DetailView(url: post.url)) {
-                    HStack {
+                    ZStack{
+                        HStack {
                         Text(String(post.points))
                         Text(post.title)
-                        
+                        }.padding([.leading, .top, .bottom], 5)
+                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
                     }
+                    
                 }
-            }
+                }
             .navigationBarTitle("HACKER NEWS")
         }
         .onAppear {
